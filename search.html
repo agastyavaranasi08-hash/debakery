@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search · Manga–LN–Anime Linker</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header id="site-header"></header>
+  <main class="container">
+    <section class="card">
+      <h1>Search the MLA Database</h1>
+      <input id="search-input" type="search" placeholder="Search series, arcs, or mappings" aria-label="Search" />
+      <p class="hint">Results update as you type. Select a hit to jump to the arc in Mappings.</p>
+    </section>
+
+    <section class="card">
+      <h2>Results</h2>
+      <div id="search-results" class="results-list" role="list"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Search looks through labels, notes, summaries, and series names.</p>
+  </footer>
+
+  <script type="module" src="js/search.js"></script>
+</body>
+</html>

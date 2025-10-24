@@ -119,6 +119,27 @@
           <div class="badge"><span class="dot good"></span> Firmware: <strong>v0.9.3</strong></div>
           <div class="badge"><span class="dot good"></span> BLE Mode: <strong id="bleMode">BLE</strong></div>
         </div>
+        <div class="controls">
+          <div class="control">
+            <label>Cloud Sync</label>
+            <label class="switch">
+              <input id="toggleCloud" type="checkbox" checked>
+              <span class="slider" aria-hidden="true"></span>
+            </label>
+          </div>
+          <div class="control">
+            <label>Sampling (Hz)</label>
+            <input id="sampleHz" type="number" min="1" max="50" value="5" />
+          </div>
+          <div class="control">
+            <label>Alert Volume</label>
+            <input id="alertVol" class="range" type="range" min="0" max="100" value="40" />
+          </div>
+          <div class="control">
+            <label for="fw">Firmware Update</label>
+            <input id="fw" type="file" accept=".bin,.dfu" />
+          </div>
+        </div>
       </div>
 
       <div class="panel" style="padding:14px;margin-top:14px">

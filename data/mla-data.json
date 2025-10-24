@@ -1,0 +1,66 @@
+{
+  "series": [
+    {
+      "id": "series-chronicles",
+      "name": "Chronicles of Aether",
+      "arcs": [
+        {
+          "id": "arc-aether-prologue",
+          "title": "Prologue Sparks",
+          "summary": "Introduces the Aer Guild and the inciting incident that splits the trio.",
+          "rating": 4,
+          "mappings": [
+            {
+              "id": "map-prologue-1",
+              "label": "Inciting Incident",
+              "manga": "Chapter 1",
+              "ln": "Volume 1 - Chapter 1",
+              "anime": "Episode 1",
+              "notes": "Minor pacing tweaks in anime montage."
+            },
+            {
+              "id": "map-prologue-2",
+              "label": "Guild Oath",
+              "manga": "Chapter 2",
+              "ln": "Volume 1 - Chapter 2",
+              "anime": "",
+              "notes": "Anime omits the extended oath scene."
+            }
+          ],
+          "chat": []
+        },
+        {
+          "id": "arc-aether-delta",
+          "title": "Delta Expedition",
+          "summary": "The crew enters the storm delta to retrieve the prism core.",
+          "rating": 5,
+          "mappings": [
+            {
+              "id": "map-delta-1",
+              "label": "Storm Entry",
+              "manga": "Ch. 12-13",
+              "ln": "Vol. 3 - Ch. 2",
+              "anime": "Episode 8",
+              "notes": "Anime condenses dialogue."
+            }
+          ],
+          "chat": []
+        }
+      ]
+    },
+    {
+      "id": "series-moonforge",
+      "name": "Moonforge Saga",
+      "arcs": [
+        {
+          "id": "arc-moonforge-trials",
+          "title": "Trials of the Moonforge",
+          "summary": "Candidates face trials beneath the moonlit forge.",
+          "rating": 3,
+          "mappings": [],
+          "chat": []
+        }
+      ]
+    }
+  ]
+}

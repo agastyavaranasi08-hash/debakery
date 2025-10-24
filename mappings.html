@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mappings · Manga–LN–Anime Linker</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header id="site-header"></header>
+  <main class="container">
+    <section class="card">
+      <h1>Arc Mappings</h1>
+      <div class="selectors">
+        <label>
+          Series
+          <select id="series-picker"></select>
+        </label>
+        <label>
+          Arc
+          <select id="arc-picker"></select>
+        </label>
+        <span id="arc-health" class="health-badge" aria-live="polite"></span>
+      </div>
+    </section>
+
+    <section class="card" id="arc-meta" hidden>
+      <h2>Arc Details</h2>
+      <div class="meta-grid">
+        <label>
+          Title
+          <input id="arc-title-input" type="text" maxlength="160" />
+        </label>
+        <label>
+          Summary
+          <textarea id="arc-summary-input" rows="3"></textarea>
+        </label>
+        <label>
+          Rating
+          <input id="arc-rating-input" type="number" min="1" max="5" />
+        </label>
+      </div>
+    </section>
+
+    <section class="card" id="mappings-card" hidden>
+      <div class="table-header">
+        <h2>Combined Mapping Table</h2>
+        <button id="add-mapping" class="primary">Add Mapping Row</button>
+      </div>
+      <div class="table-scroll">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th scope="col">Label</th>
+              <th scope="col">Manga</th>
+              <th scope="col">Light Novel</th>
+              <th scope="col">Anime</th>
+              <th scope="col">Notes</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="mapping-rows"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card" id="upload-card" hidden>
+      <h2>Share with Team</h2>
+      <form id="upload-form" class="form-grid">
+        <label for="author-name">Your Name (optional)</label>
+        <input id="author-name" type="text" maxlength="120" />
+        <label for="author-email">Email (optional)</label>
+        <input id="author-email" type="email" maxlength="160" />
+        <label for="commit-message">Commit Message</label>
+        <input id="commit-message" type="text" maxlength="160" placeholder="Update MLA data" />
+        <button type="submit" class="primary">Upload to Repo</button>
+      </form>
+      <p id="upload-status" role="status" aria-live="polite" class="status-text"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Uploads save to the shared GitHub JSON without clearing your local cache.</p>
+  </footer>
+
+  <script type="module" src="js/mappings.js"></script>
+</body>
+</html>
